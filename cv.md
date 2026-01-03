@@ -7,4 +7,4 @@ permalink: /cv/
 # Curriculum Vitae
 
 You can download my CV here:  
-[Download PDF](/assets/pdf/Ross_Kalter_CV.pdf)
+[Download PDF](/assets/CV_Ross_Kalter.pdf)
