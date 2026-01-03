@@ -8,19 +8,47 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: "Hello. I'm Jami Gibbs."
-email: 'jami0821@gmail.com'
-description: "I'm a software developer and designer from Chicago creating useful things for the web."
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jamigibbs.github.io/phantom" # the base hostname & protocol for your site, e.g. https://example.com
-twitter_username: 'jamigibbs'
-github_username: 'jamigibbs'
-medium_username: 'blog.jamigibbs.com'
+
+############################################################
+
+
+# Basic info
+title: Ross Kalter
+email: rkalter19@gmail.com
+description: "Master's student in Remote Sensing & GIS focused on ecological monitoring, UAV workflows, and spatial data science."
+baseurl: ""             # leave empty for username.github.io
+url: "https://rosskalter.github.io"
+github_username: 'rosskalter'
+
+# Navigation menu
+enable_nav: true
+nav_item:
+  - { url: '/', text: 'Home' }
+  - { url: '/about', text: 'About' }
+  - { url: '/projects', text: 'Projects' }
+  - { url: '/cv', text: 'CV' }
+
+# Contact form email (if using Formspree)
+# formspree_email: rkalter19@gmail.com
+
+# Social links
+socials:
+  - { icon: 'fab fa-github', url: 'https://github.com/rosskalter' }
+  - { icon: 'fab fa-linkedin', url: 'https://www.linkedin.com/in/rosskalter/' }
+
+
+############################################################
+
+
+### Phantom settings
+footer_text: '© 2026 Ross Kalter'
+admin_name: 'Ross Kalter'
+google_analytics: "UA-9999999-99" # Update with your own tracking ID
+enable_contact: false
+
+
+############################################################
+
 
 # Build settings
 markdown: kramdown
@@ -89,16 +117,3 @@ pagination:
   # Without file extension
   indexpage: 'index'
 
-############################################################
-
-### Phantom settings
-footer_text: '© 2018 Jami Gibbs'
-admin_name: 'Jami Gibbs'
-google_analytics: "UA-9999999-99" # Update with your own tracking ID
-enable_contact: false
-
-#### Phantom Navigation menu
-enable_nav: true
-nav_item:
-  - { url: '/', text: 'Home' }
-  - { url: '/about', text: 'About' }
