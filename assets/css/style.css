@@ -1,0 +1,13 @@
+.project-page .project-hero {
+  width: 100%;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.project-page section {
+  margin-top: 3rem;
+}
+
+.project-page h2 {
+  margin-bottom: 0.8rem;
+}
