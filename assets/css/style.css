@@ -49,3 +49,9 @@
 .more-projects {
   margin-top: 2rem;
 }
+
+.page-intro {
+  max-width: 700px;
+  margin-bottom: 2rem;
+  color: #555;
+}
