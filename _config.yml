@@ -1,0 +1,19 @@
+title: "Ross Kalter — GIS Portfolio"
+email: ""
+description: "GIS, remote sensing, and marine ecology portfolio"
+baseurl: "" # change if deploying to a subpath
+url: "https://rosskalter.github.io"
+markdown: kramdown
+theme: minima
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"

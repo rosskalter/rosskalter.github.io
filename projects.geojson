@@ -1,0 +1,24 @@
+---
+layout: none
+permalink: /projects.geojson
+---
+{
+  "type": "FeatureCollection",
+  "features": [
+    {% for p in site.projects %}
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "{{ p.title | xml_escape }}",
+        "excerpt": "{{ p.excerpt | xml_escape }}",
+        "page_url": "{{ p.url }}",
+        "technologies": [{% for t in p.technologies %}"{{ t }}"{% if forloop.last == false %}, {% endif %}{% endfor %}]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [{{ p.coords.lon | default: 34.9896 }}, {{ p.coords.lat | default: 32.7940 }}]
+      }
+    }{% if forloop.last == false %},{% endif %}
+    {% endfor %}
+  ]
+}

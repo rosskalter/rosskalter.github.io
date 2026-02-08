@@ -1,0 +1,22 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+<h1>Projects</h1>
+<p>Collection of GIS / remote sensing / analysis projects. Click a tile for details and a focused map.</p>
+
+<div class="projects-grid">
+  {% for p in site.projects %}
+  <article class="project-tile">
+    <a href="{{ p.url }}">
+      {% if p.cover_image %}
+      <img src="{{ p.cover_image }}" alt="{{ p.title }}">
+      {% endif %}
+      <h3>{{ p.title }}</h3>
+      <p>{{ p.excerpt }}</p>
+      <p class="meta">{{ p.technologies | join: ", " }}</p>
+    </a>
+  </article>
+  {% endfor %}
+</div>

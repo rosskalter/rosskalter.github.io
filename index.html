@@ -1,0 +1,33 @@
+---
+layout: default
+title: Home
+---
+<header class="site-hero">
+  <h1>Ross Kalter</h1>
+  <p>GIS | Remote Sensing | Marine & Seascape Ecology</p>
+  <p><a href="/about.html">About</a> • <a href="/projects/">Projects</a> • <a href="/map.html">GIS Portfolio (Map)</a> • <a href="/assets/CV_Ross_Kalter.pdf">Resume (PDF)</a></p>
+</header>
+
+<main class="container">
+  <section>
+    <h2>About</h2>
+    <p>I work with environmental and ecological systems through spatial data, modeling, and field-informed analysis. I’m drawn to complex systems — where remote sensing, computation, and ecology intersect — and to turning data into insight that supports real-world environmental decision-making.</p>
+  </section>
+
+  <section>
+    <h2>Featured projects</h2>
+    <ul class="tiles">
+      {% for p in site.projects limit:3 %}
+      <li class="tile">
+        <a href="{{ p.url }}">
+          {% if p.cover_image %}
+          <img src="{{ p.cover_image }}" alt="{{ p.title }}"/>
+          {% endif %}
+          <h3>{{ p.title }}</h3>
+          <p>{{ p.excerpt }}</p>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+</main>
