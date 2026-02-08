@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<article class="project-page">
+  <header>
+    <h1>{{ page.title }}</h1>
+    <p class="meta">{{ page.technologies | join: ", " }}</p>
+  </header>
+
+  {% if page.cover_image %}
+  <img class="project-cover" src="{{ page.cover_image }}" alt="{{ page.title }}">
+  {% endif %}
+
+  <section class="project-content">
+    {{ content }}
+  </section>
+
+  <section class="project-map">
+    <div id="project-map" style="height:360px;"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(){
+        var lat = {{ page.coords.lat | default: 32.7940 }};
+        var lon = {{ page.coords.lon | default: 34.9896 }};
+        initProjectMap('project-map', lat, lon, 12);
+      });
+    </script>
+  </section>
+
+  <p><a href="/projects/">Back to projects</a></p>
+</article>

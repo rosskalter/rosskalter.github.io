@@ -1,0 +1,13 @@
+---
+layout: default
+title: GIS Portfolio Map
+permalink: /map.html
+---
+<h1>GIS Portfolio Map</h1>
+<div id="site-map" style="height:600px;"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(){
+    initSiteMap('site-map', '/projects.geojson');
+  });
+</script>
